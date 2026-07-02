@@ -1,7 +1,7 @@
 package Maps_And_Sets;
 import java.util.ArrayList;
 import java.util.HashSet;
-public class MissingElementsInRange {
+public class MissingElementsInRange { 
 
 //    public ArrayList<Integer> missingRange(int[] arr, int low, int high) {
 //        ArrayList<Integer> ans = new ArrayList<>();
@@ -14,7 +14,7 @@ public class MissingElementsInRange {
 //        }
 //        return ans;
 //    }
-    public ArrayList<Integer> missingRange(int[] arr, int low, int high) {
+    public ArrayList<Integer> missingRange(int[] arr, int low, int high) { 
         ArrayList<Integer> ans = new ArrayList<>(arr.length);
         HashSet<Integer> set = new HashSet<>();
         for(int ele : arr) set.add(ele);
