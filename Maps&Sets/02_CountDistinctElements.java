@@ -2,7 +2,7 @@ package Maps_And_Sets;
 
 import java.util.HashSet;
 
-public class CountDistinctElements {
+public class CountDistinctElements {  //TC&SC -- O(n)
     static int distinct(int arr[]) {
         HashSet<Integer> set = new HashSet<>();
         for(int ele : arr) set.add(ele);
