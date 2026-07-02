@@ -1,6 +1,6 @@
 package Maps_And_Sets;
 import java.util.HashSet;
-public class TwoSum {
+public class TwoSum {  // TC SC -- O(n)
     boolean twoSum(int arr[], int target) {
         HashSet<Integer> set = new HashSet<>();
         for(int ele : arr){
