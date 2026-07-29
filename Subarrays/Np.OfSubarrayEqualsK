@@ -1,0 +1,19 @@
+class Solution {
+    public int subarraySum(int[] arr, int k) {
+        int n = arr.length;
+        HashMap<Integer, Integer> map = new HashMap<>();
+        int prefixsum=0;
+        int count = 0;
+        map.put(0,1);
+        for(int i=0; i<n; i++) {
+            prefixsum += arr[i];
+            int quest = prefixsum-k;
+
+            if(map.containsKey(quest)) {
+                count += map.get(quest);
+            }
+            map.put(prefixsum,map.getOrDefault(prefixsum, 0)+ 1);
+        }
+        return count;
+    }
+}
