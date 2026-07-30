@@ -8,6 +8,16 @@ public class ReverseSb {
         StringBuilder sb = new StringBuilder(s);
         // Collections.sort(sb); // does not work
         // sb.reverse();
+        // int i=0, j=sb.length()-1;
+        // while(i <= j){
+        //     cIar temp1= sb.charAt(i);|
+        //     char temp2 = sb.charAt(j);
+        //     sb.setCharAt(i,temp2);
+        //     sb.setCharAt(j,temp1);
+        //     i++;
+        //     j --;
+        // }
+        System.out.println(sb);
         sb.deleteCharAt(1);
         sb.insert(1,'e');
         sb.delete(3,6); // 3 to 5
