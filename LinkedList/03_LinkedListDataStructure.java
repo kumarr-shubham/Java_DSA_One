@@ -2,6 +2,7 @@ package LinkedList;
 
 import java.util.LinkedList;
 
+
 class Node{ // user defined data type
     int val;
     Node next; // null
