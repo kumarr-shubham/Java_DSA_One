@@ -1,5 +1,11 @@
 package LinkedList;
-
+class Node{
+    int val; //default value 0
+    Node next; //default value null
+    Node(int val){
+        this.val=val;
+    }
+}
 public class NodeOfLinkedList {
     public static void main(String[] args) {
         // 10->20->30->40->50
@@ -13,11 +19,12 @@ public class NodeOfLinkedList {
         b.next = c;
         c.next = d;
         d.next = e;
+        e.next = null; //default
 
-        System.out.println(e.val);
-        System.out.println(a.next.next.next.val);
-        System.out.println(c);
-        System.out.println(b.next);
-        System.out.println(a.next.next);
+        System.out.println(e.val);//50
+        System.out.println(a.next.next.next.val);//40
+        System.out.println(c);//c
+        System.out.println(b.next);//c
+        System.out.println(a.next.next);//c
     }
 }
