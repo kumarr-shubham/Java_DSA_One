@@ -8,11 +8,12 @@ public class ArraySubset {
         // no
         HashMap<Integer,Integer> aMap = new HashMap<>();
         for(int ele : a){
-            if(aMap.containsKey(ele)){
-                int freq = aMap.get(ele);
-                aMap.put(ele,freq+1);
-            }
-            else aMap.put(ele,1);
+            // if(aMap.containsKey(ele)){
+            //     int freq = aMap.get(ele);
+            //     aMap.put(ele,freq+1);
+            // }
+            // else aMap.put(ele,1);
+            aMap.put(ele, aMap.getOrDefault(ele, 0)+1);
         }
         HashMap<Integer,Integer> bMap = new HashMap<>();
         for(int ele : b){
