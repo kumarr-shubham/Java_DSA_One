@@ -2,13 +2,13 @@ class Solution {
     int getMiddle(Node head) {
         Node slow = head;
         Node fast = head;
-        while(fast!=null && fast.next!=null){
+        while(fast!=null && fast.next!=null){ //order same rhega
             slow = slow.next;
             fast = fast.next.next;
         }
         return slow.data;
         // // Not a ONE PASS solution
-        // int length = 0;
+        // int length = 0;  //O(n+n/2)
         // Node temp = head;
         // while(temp != null){
         //     temp = temp.next;
