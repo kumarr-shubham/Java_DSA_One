@@ -8,12 +8,12 @@ public class ArraySubset {
         // no
         HashMap<Integer,Integer> aMap = new HashMap<>();
         for(int ele : a){
-            // if(aMap.containsKey(ele)){
-            //     int freq = aMap.get(ele);
-            //     aMap.put(ele,freq+1);
-            // }
-            // else aMap.put(ele,1);
-            aMap.put(ele, aMap.getOrDefault(ele, 0)+1);
+            if(aMap.containsKey(ele)){
+                int freq = aMap.get(ele);
+                aMap.put(ele,freq+1);
+            }
+            else aMap.put(ele,1);
+            //aMap.put(ele, aMap.getOrDefault(ele, 0)+1);
         }
         HashMap<Integer,Integer> bMap = new HashMap<>();
         for(int ele : b){
@@ -31,4 +31,22 @@ public class ArraySubset {
         }
         return true;
     }
+}
+
+//or
+class Solution {
+    public boolean isSubset(int a[], int b[]) {
+        // Your code here
+        HashMap<Integer, Integer> MapA = new HashMap<>();
+        for(int ele : a){
+        MapA.put(ele, MapA.getOrDefault(ele, 0)+1);
+        }
+        for(int ele : b) {
+            if(!MapA.containsKey(ele)) return false;
+            if(MapA.get(ele)==0) return false;
+            MapA.put(ele,MapA.get(ele)-1);
+        }
+        return true;
+    }
+    
 }
