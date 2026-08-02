@@ -4,7 +4,7 @@ public class BasicSTLOfStacks {
     public static void main(String[] args) {
         Stack<String> st = new Stack<>();
         System.out.println(st.isEmpty());
-        System.out.println(st.size()==0);
+        System.out.println(st.size()==0);//ye uper wale line ka hi alternative  hai
 //        System.out.println(st.peek());
 //        st.pop(); // Underflow
         st.push("Khushi");
