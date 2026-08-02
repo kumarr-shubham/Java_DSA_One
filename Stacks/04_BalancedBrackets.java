@@ -2,7 +2,7 @@ package Stacks;
 
 import java.util.Stack;
 
-public class BalancedBrackets {
+public class BalancedBrackets {      //O(n) //O(n)
     static boolean isBalanced(String s) {
         int n = s.length();
         if(n%2 == 1) return false;
