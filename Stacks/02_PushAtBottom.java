@@ -8,7 +8,7 @@ public class PushAtBottom {
         st.push(30);
         st.push(40); // top
         int ele = 50;
-        System.out.println(st);
+        System.out.println(st);//ye bottom to top print krke dega
         pushAtBottom(st,ele);
         System.out.println(st);
         reverse(st);
