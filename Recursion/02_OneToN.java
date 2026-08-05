@@ -9,28 +9,28 @@ public class OneToN {
         n = sc.nextInt();
         printDecInc(n);
     }
-    public static void printDecInc(int n){
+    public static void printDecInc(int n){  //5q(1-n & 1-n print krne ka code)
         if(n==0) return;
         System.out.print(n+" ");
         printDecInc(n-1);
         if(n!=1) System.out.print(n+" ");
     }
-    public static void printNto1(int n){
+    public static void printNto1(int n){ //3q(n-1 print krne ka code)
         if(n==0) return;
         System.out.print(n+" ");
         printNto1(n-1);
     }
-    public static void print1toN(int n){
+    public static void print1toN(int n){  //4q(1-n print krne ka code)
         if(n==0) return;
         print1toN(n-1);
         System.out.print(n+" ");
     }
-    public static void print1toNGlobal(int x){
+    public static void print1toNGlobal(int x){ //2q(1-n print krne ka code) isme n global lia gya hai
         if(x>n) return;
         System.out.print(x+" ");
         print1toNGlobal(x+1);
     }
-    public static void ParameterisedPrint1toN(int x, int n){
+    public static void ParameterisedPrint1toN(int x, int n){ //1q(1-n print krne ka code) - preffered
         if(x>n) return;
         System.out.println(x);
         ParameterisedPrint1toN(x+1,n);
