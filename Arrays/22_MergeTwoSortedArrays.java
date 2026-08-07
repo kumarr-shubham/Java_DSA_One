@@ -6,8 +6,8 @@ public class MergeTwoSortedArrays {
         int[] b = {1,3,4,5,7,8,90};
 
         int[] c = new int[a.length+b.length];
-        for(int ele : c) System.out.print(ele+" ");
-        System.out.println();
+        // for(int ele : c) System.out.print(ele+" ");
+        // System.out.println();
         merge(c,a,b);
         for(int ele : c) System.out.print(ele+" ");
         System.out.println();
